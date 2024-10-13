@@ -4,7 +4,7 @@ import CallIcon from '@mui/icons-material/Call';
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import EmailIcon from '@mui/icons-material/Email';
 
-import { THANK_YOU } from '../constants/Constants';
+import { THANK_YOU, LOWES} from '../constants/Constants';
 import GreetingIcon from '../assets/greeting.png'
 
 // Education Component
@@ -54,7 +54,7 @@ const Education = () => {
           </div>
           <div className="flex justify-between">
             <p className="text-lg">Previous Company:</p>
-            <p className="font-semibold text-lg">Lowe's</p>
+            <p className="font-semibold text-lg">{LOWES}</p>
           </div>
           <div className="flex justify-between">
             <p className="text-lg">Duration:</p>
@@ -90,7 +90,7 @@ const Header: React.FC = () => {
                 {/* <h3 className='text-xl text-center text-cyan-600 relative top-2'>About me</h3> */}
                 <p>Namaste</p>
                 <p>{THANK_YOU}</p>
-                <p>I am Pankaj Kumar, Software Engineer at H&M | Ex-Lowe's</p>
+                <p>I am Pankaj Kumar, Software Engineer at H&M | Ex-{LOWES}</p>
             </div>
             <div className="flex flex-col sm:flex-row justify-evenly items-stretch space-x-4 -mt-12">
                 <div className="flex-1 sm:max-w-[400px] mt-6">
