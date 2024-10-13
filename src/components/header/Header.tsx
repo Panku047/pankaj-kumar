@@ -14,20 +14,20 @@ const Education = () => {
         <header className="text-xl font-bold text-cyan-600 mb-4">Education</header>
         <div className="space-y-2">
           <div className="flex justify-between">
-            <p className="text-lg">Course:</p>
-            <p className="font-semibold text-lg">Bachelor of Engineering (BE)</p>
+            <p className="text-lg text-black">Course:</p>
+            <p className="font-semibold text-lg text-black">Bachelor of Engineering (BE)</p>
           </div>
           <div className="flex justify-between">
-            <p className="text-lg">College:</p>
-            <p className="font-semibold text-lg">PES College of Engineering</p>
+            <p className="text-lg text-black">College:</p>
+            <p className="font-semibold text-lg text-black">PES College of Engineering</p>
           </div>
           <div className="flex justify-between">
-            <p className="text-lg">CGPA:</p>
-            <p className="font-semibold text-lg">8.36</p>
+            <p className="text-lg text-black">CGPA:</p>
+            <p className="font-semibold text-lg text-black">8.36</p>
           </div>
           <div className="flex justify-between">
-            <p className="text-lg">Passing Year:</p>
-            <p className="font-semibold text-lg">2018</p>
+            <p className="text-lg text-black">Passing Year:</p>
+            <p className="font-semibold text-lg text-black">2018</p>
           </div>
         </div>
       </div>
@@ -41,24 +41,24 @@ const Education = () => {
         <header className="text-xl font-bold text-cyan-600 mb-4">Work Experience</header>
         <div className="space-y-2">
           <div className="flex justify-between">
-            <p className="text-lg">Position:</p>
-            <p className="font-semibold text-lg">Software Engineer</p>
+            <p className="text-lg text-black">Position:</p>
+            <p className="font-semibold text-lg text-black">Software Engineer</p>
           </div>
           <div className="flex justify-between">
-            <p className="text-lg">Company:</p>
-            <p className="font-semibold text-lg">H&M Group</p>
+            <p className="text-lg text-black">Company:</p>
+            <p className="font-semibold text-lg text-black">H&M Group</p>
           </div>
           <div className="flex justify-between">
-            <p className="text-lg">Duration:</p>
-            <p className="font-semibold text-lg">Nov-2023 - Present</p>
+            <p className="text-lg text-black">Duration:</p>
+            <p className="font-semibold text-lg text-black">Nov-2023 - Present</p>
           </div>
           <div className="flex justify-between">
-            <p className="text-lg">Previous Company:</p>
-            <p className="font-semibold text-lg">{LOWES}</p>
+            <p className="text-lg text-black">Previous Company:</p>
+            <p className="font-semibold text-lg text-black">{LOWES}</p>
           </div>
           <div className="flex justify-between">
-            <p className="text-lg">Duration:</p>
-            <p className="font-semibold text-lg">July-2018 - Nov-2023</p>
+            <p className="text-lg text-black">Duration:</p>
+            <p className="font-semibold text-lg text-black">July-2018 - Nov-2023</p>
           </div>
         </div>
       </div>
@@ -88,9 +88,9 @@ const Header: React.FC = () => {
                 <img className='h-14 w-14' src={GreetingIcon.src} alt='Nameste' />
                 </p>
                 {/* <h3 className='text-xl text-center text-cyan-600 relative top-2'>About me</h3> */}
-                <p>Namaste</p>
-                <p>{THANK_YOU}</p>
-                <p>I am Pankaj Kumar, Software Engineer at H&M | Ex-{LOWES}</p>
+                <p className='text-black'>Namaste</p>
+                <p className='text-black'>{THANK_YOU}</p>
+                <p className='text-black'>I am Pankaj Kumar, Software Engineer at H&M | Ex-{LOWES}</p>
             </div>
             <div className="flex flex-col sm:flex-row justify-evenly items-stretch space-x-4 -mt-12">
                 <div className="flex-1 sm:max-w-[400px] mt-6">
