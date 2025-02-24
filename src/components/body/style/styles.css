@@ -1,0 +1,7 @@
+.skills-frontend-list {
+    @apply p-1 border-b border-[aqua] hover:bg-slate-200;
+}
+
+.skills-head {
+    @apply text-center;
+}

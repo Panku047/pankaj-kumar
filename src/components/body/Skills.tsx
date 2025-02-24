@@ -11,8 +11,11 @@ const skills = [
   "System Design",
   'HTML',
   'CSS',
-  "Express JS",
-  "Database"
+  'React Testing Library',
+  'Jest',
+  'Java',
+  'Springboot',
+  'Postgre'
 ];
 
 const tools = [
@@ -27,7 +30,7 @@ const tools = [
 const Skills: React.FC = () => {
   return (
     <div className="bg-blue-100 flex flex-col items-center justify-center p-4">
-      <h2 className="text-xl text-center text-cyan-600">Skills</h2>
+      <h2 className="text-xl font-bold text-cyan-600 mb-4">Skills</h2>
       
       <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4 mt-2">
         {skills.map((skill, index) => (

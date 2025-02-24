@@ -15,7 +15,7 @@ const Footer: React.FC = () => {
         
         {/* Social Media Icons */}
         <div className="flex justify-center space-x-6 mb-4">
-          <IconButton component="a" href="https://www.linkedin.com/in/pankaj-kumar-047/" target="_blank" rel="noopener noreferrer">
+          <IconButton component="a" href="https://www.linkedin.com/in/pankaj047/" target="_blank" rel="noopener noreferrer">
             <LinkedInIcon className="text-white hover:text-gray-200" fontSize="large" />
           </IconButton>
           

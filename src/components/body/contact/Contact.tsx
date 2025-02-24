@@ -18,7 +18,7 @@ const copyToClipboard = (text: string) => {
 
 const Contact: React.FC = () => {
   return (
-    <div className="min-h-screen bg-gray-100 flex flex-col justify-center items-center p-8">
+    <div id='to-contact' className="min-h-screen bg-gray-100 flex flex-col justify-center items-center p-8">
       <h2 className="text-3xl font-bold mb-6 text-gray-800">Contact Me</h2>
       <p className="text-lg text-gray-700 mb-8">
         You can reach out to me via any of the options below:
