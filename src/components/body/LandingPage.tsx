@@ -3,8 +3,7 @@ import Image from 'next/image';
 import ArrowDownwardSharpIcon from '@mui/icons-material/ArrowDownwardSharp';
 
 import ContactButton from './contact/ContactButton';
-import Contact from './contact/Contact';
-import { ABOUT_DES_ONE, ABOUT_DES_THREE, ABOUT_DES_TWO } from '../constants/Constants';
+import { ABOUT_DES_ONE, ABOUT_DES_THREE, ABOUT_DES_TWO, ROLES } from '../constants/Constants';
 
 const LandingPage: React.FC = () => {
   return (
@@ -22,7 +21,7 @@ const LandingPage: React.FC = () => {
       <div className="text-center mt-2">
         <h1 className="text-4xl font-semibold text-[#1B4F72] mb-1">Pankaj Kumar</h1>
         <p className="text-[#1B4F72] font-serif leading-8 text-[1.2rem] mb-1">
-            Software Engineer at H&M Group | Ex-Lowe's
+            {ROLES}
         </p>
         <div className="text-lg text-gray-700 leading-relaxed md:text-xl font-light max-w-3xl mx-auto text-justify">
             <p className='mb-2'>{ABOUT_DES_ONE}</p>
