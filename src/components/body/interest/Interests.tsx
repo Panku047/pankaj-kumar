@@ -23,12 +23,8 @@ const learningTechnologies = [
 
 const Interests: React.FC = () => {
   return (
-    <div className="min-h-screen bg-gray-100 py-8 px-4 sm:px-10 lg:px-20">
-      <h2 className="text-3xl font-bold mb-8 text-center text-gray-800">Interests</h2>
-      
-      {/* Personal Projects Section */}
-      <div className="mb-8">
-        <h3 className="text-2xl font-semibold text-cyan-600 mb-4">Personal Projects</h3>
+    <div className="min-h-screen bg-gray-100 py-4 px-2 sm:px-10 lg:px-20">
+        <h3 className="text-2xl font-semibold text-cyan-600 mb-2 text-center">Personal Projects</h3>
         <div className="space-y-6">
           {personalProjects.map((project, index) => (
             <div key={index} className="bg-white shadow-lg rounded-lg p-6">
@@ -39,15 +35,14 @@ const Interests: React.FC = () => {
               </a>
             </div>
           ))}
-        </div>
       </div>
 
       {/* GitHub Details Section */}
-      <div className="mb-8">
-        <h3 className="text-2xl font-semibold text-cyan-600 mb-4">GitHub</h3>
-        <p className="text-gray-700">Check out my GitHub profile for more of my open-source contributions and personal projects.</p>
+      <div className="mb-8 text-center">
+        <h3 className="text-2xl font-semibold text-cyan-600 mb-4 pt-3">GitHub</h3>
+        <p className="text-gray-700">Check out my GitHub profile for my personal project and learning.</p>
         <a
-          href="https://github.com/mygithub"
+          href="https://github.com/Panku047"
           target="_blank"
           rel="noopener noreferrer"
           className="text-cyan-500 hover:underline mt-2 block"

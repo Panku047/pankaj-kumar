@@ -9,5 +9,5 @@ export default function ContactButton({ targetId }: { targetId: string }) {
       targetElement.scrollIntoView({ behavior: "instant" });
     }
   };
-  return <Button onClick={handleScroll} variant="text">Contact</Button>  
+  return <Button onClick={handleScroll} variant="outlined">Contact</Button>  
 }

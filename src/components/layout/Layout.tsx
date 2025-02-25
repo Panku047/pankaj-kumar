@@ -2,7 +2,7 @@ import React from 'react';
 
 import Header from '../header/Header';
 import Projects from '../body/Projects';
-import Interests from '../body/Interests';
+import Interests from '../body/interest/Interests';
 import Footer from '../footer/Footer';
 import Whatsapp from '../body/Whatsapp';
 import MySkills from '../body/skills/MySkills';

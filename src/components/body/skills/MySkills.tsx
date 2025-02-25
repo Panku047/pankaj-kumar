@@ -8,11 +8,11 @@ const frontendTech = [
     "React JS", "JavaScript", "TypeScript", "Next JS", "HTML", "CSS", "Tailwind CSS", "Redux"
 ]
 const backendTech = [
-    "Java", "Springboot", "SQL", "SpringBoot"
+    "Java", "Springboot", "SQL", "Postgres DB"
 ]
 
 const otherTech = [
-    "Java", "Springboot", "SQL", "SpringBoot"
+    "Jest", "React Testing Library", "Cypress"
 ]
 
 const MySkills: React.FC = () => {
@@ -24,7 +24,7 @@ const MySkills: React.FC = () => {
                 display: 'flex',
                 flexWrap: 'wrap',
                 '& > :not(style)': {
-                m: 4,
+                m: 3,
                 width: 300,
                 height: 312,
                 },
@@ -56,7 +56,7 @@ const MySkills: React.FC = () => {
             </Paper>
             <Paper elevation={3} >
                 <div className='skills-head p-3 text-xl bg-[rebeccapurple] text-white'>
-                    Others
+                    Testing and Tools
                 </div>
                 <div className='skills-head'>
                     <ul>

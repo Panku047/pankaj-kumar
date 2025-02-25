@@ -4,8 +4,19 @@ import ArrowDownwardSharpIcon from '@mui/icons-material/ArrowDownwardSharp';
 
 import ContactButton from './contact/ContactButton';
 import { ABOUT_DES_ONE, ABOUT_DES_THREE, ABOUT_DES_TWO, ROLES } from '../constants/Constants';
+import DownloadPDF from '../utils/DownloadPDF';
 
 const LandingPage: React.FC = () => {
+  const handleDownload = () => {
+    const pdfUrl = "/Resume.pdf"; // Path to the file in 'public' folder
+    const link = document.createElement("a");
+    link.href = pdfUrl;
+    link.download = "MyFile.pdf"; // Name of the downloaded file
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
   return (
     <div className="flex flex-col items-center justify-start min-h-screen bg-white text-white p-6">
       <div className="w-[200px] h-[200px] rounded-full overflow-hidden border-4 border-gray-300 shadow-lg">
@@ -28,10 +39,11 @@ const LandingPage: React.FC = () => {
             <p className='mb-2'>{ABOUT_DES_TWO}</p>
             <p className='mb-2'>{ABOUT_DES_THREE}</p>
         </div>
-        <div className='z-0'>
-            <ArrowDownwardSharpIcon className='text-gray-400' />
-            <br />
+        <div className='z-0 flex justify-evenly pt-2'>
+            {/* <ArrowDownwardSharpIcon className='text-gray-400' />
+            <br /> */}
             <ContactButton targetId="to-contact" />
+            <DownloadPDF />
         </div>
       </div>
     </div>

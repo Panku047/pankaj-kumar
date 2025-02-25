@@ -11,7 +11,7 @@ const Footer: React.FC = () => {
   return (
     <footer className="bg-gradient-to-r from-cyan-500 to-blue-200 py-6">
       <div className="container mx-auto text-center">
-        <h3 className="text-2xl font-semibold text-white mb-4">Connect with Me</h3>
+        <h3 className="text-2xl font-semibold text-white mb-4"></h3>
         
         {/* Social Media Icons */}
         <div className="flex justify-center space-x-6 mb-4">
