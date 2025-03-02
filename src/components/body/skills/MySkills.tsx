@@ -8,7 +8,7 @@ const frontendTech = [
     "React JS", "JavaScript", "TypeScript", "Next JS", "HTML", "CSS", "Tailwind CSS", "Redux"
 ]
 const backendTech = [
-    "Java", "Springboot", "SQL", "Postgres DB"
+    "Node JS","Express JS","Java", "Springboot", "SQL", "Postgres DB", "GraphQL"
 ]
 
 const otherTech = [
@@ -18,11 +18,12 @@ const otherTech = [
 const MySkills: React.FC = () => {
   return (
     <div className="bg-blue-100 flex flex-col items-center justify-center p-4">
-        <div className='text-2xl'>Skills</div>
+        <div className='page-heading'>Skills</div>
         <Box
             sx={{
                 display: 'flex',
                 flexWrap: 'wrap',
+                justifyContent: 'center',
                 '& > :not(style)': {
                 m: 3,
                 width: 300,
@@ -30,7 +31,7 @@ const MySkills: React.FC = () => {
                 },
             }}
             >
-            <Paper elevation={0} className='bg-[aliceblue]'>
+            <Paper elevation={0} className='bg-[white]'>
                 <div className='skills-head p-3 text-xl bg-[rebeccapurple] text-white'>
                     Frontend
                 </div>
@@ -67,6 +68,7 @@ const MySkills: React.FC = () => {
                 </div>
             </Paper>
         </Box>
+        <div className='border border-[#fbfcfc] w-[90%]'></div>
     </div>
   );
 };

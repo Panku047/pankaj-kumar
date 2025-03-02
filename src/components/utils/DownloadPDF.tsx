@@ -5,7 +5,8 @@ import React from "react";
 
 const DownloadPDF = () => {
   const handleDownload = () => {
-    const pdfUrl = "/Resume.pdf"; // File should be inside 'public' folder
+    // const pdfUrl = "/Resume.pdf"; // File should be inside 'public' folder
+    const pdfUrl = "https://drive.google.com/uc?export=download&id=1GypmNol0TGNOX_ujNKShmtBjJWZHWzoY"
     const link = document.createElement("a");
     link.href = pdfUrl;
     link.download = "Pankaj_Kumar_Resume.pdf"; // Name of the downloaded file
