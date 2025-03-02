@@ -100,10 +100,10 @@ const ContactMe: React.FC = () => {
 
     // Use newErrors instead of waiting for state to update
     if (!newErrors.name && !newErrors.email && !newErrors.message) {
-        await ContactAPI(name, email, message);
-        clearAll();
-        setErrors({ name: "", email: "", message: "" });
         setOpen(true)
+        clearAll();
+        await ContactAPI(name, email, message);
+        setErrors({ name: "", email: "", message: "" });
     } else {
         console.log("Validation failed:", newErrors);
     }

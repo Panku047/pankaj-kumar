@@ -31,9 +31,7 @@ const LandingPage: React.FC = () => {
             <p className='mb-2'>{ABOUT_DES_TWO}</p>
             <p className='mb-2'>{ABOUT_DES_THREE}</p>
         </div>
-        <div className='z-0 flex justify-evenly pt-2'>
-            {/* <ArrowDownwardSharpIcon className='text-gray-400' />
-            <br /> */}
+        <div className='z-0 flex flex-wrap justify-evenly pt-2 sm:justify-evenly gap-4'>
             <ContactButton targetId="to-contact" />
             <DownloadPDF />
             <Link href="https://www.linkedin.com/in/pankaj047/" target='_blank'>
