@@ -23,17 +23,17 @@ const projects = [
     details: `OneSource global (OSG) is third party. There are data transaction involved between ${LOWES} and OSG for that API's and Batches are developed.`
   },
   {
-    company: "H&M",
-    projectName: 'CIAM-tool',
-    details: 'Created and maintaining a project to test all the sign in and sign up flow for all the portfolio brands in all the markets'
+    company: "H&M Group",
+    projectName: 'Customer Identiity and Access Management (CIAM) - tool',
+    details: 'Created and maintaining a project to test all the sign in and sign up flow for all the portfolio brands- COS, Weekday, Arket and Otherstories in all the markets'
   },
   {
-    company: "H&M",
+    company: "H&M Group",
     projectName: 'H&M Sign In flow',
-    details: `Working on Sign in flow for H&M web app`
+    details: `Working on Sign in and Register flow for H&M web app`
   },
   {
-    company: "H&M",
+    company: "H&M Group",
     projectName: 'CIAM for portfolio brands',
     details: `Creating a password less sign in flow with email otp and social media login for all the portfolio brands under H&M group`
   },
@@ -42,15 +42,14 @@ const projects = [
 
 const Project: React.FC = () => {
   return (
-    <div className="min-h-screen bg-sky-100 py-8 px-4 sm:px-10 lg:px-20">
-      <h2 className="text-xl font-bold text-cyan-600 mb-4 text-center -mt-6">My Projects</h2>
-      
+    <div className="min-h-screen bg-blue-100 text-white py-8 px-4 sm:px-10 lg:px-20">
+      <h2 className="text-xl font-bold text-cyan-600 mb-4 text-center -mt-6">Work Projects</h2>
       <div className="space-y-8">
         {projects.map((project, index) => (
-          <div key={index} className="bg-violet-50 shadow-lg rounded-lg p-6">
-            <h3 className="text-md font-serif font-bold text-cyan-600">{project.projectName}</h3>
-            <h4 className="text-md font-serif text-gray-600 mb-2">{project.company}</h4>
-            <p className="font-serif text-md text-gray-700">{project.details}</p>
+          <div key={index} className="shadow-lg bg-[white] rounded-lg p-6 hover:bg-[rebeccapurple] group">
+            <h3 className="text-md font-serif font-bold text-gray-600 group-hover:text-white">{project.projectName}</h3>
+            <h4 className="text-md font-serif text-gray-600 mb-2 group-hover:text-white">{project.company}</h4>
+            <p className="font-serif text-md text-gray-700 group-hover:text-white">{project.details}</p>
           </div>
         ))}
       </div>
